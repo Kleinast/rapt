@@ -147,7 +147,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+    background: url(../img/RAPT_J1_2.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -158,6 +158,7 @@ a:focus {
 .intro .intro-body {
     display: table-cell;
     vertical-align: middle;
+    padding-top: 250px;
 }
 
 .intro .intro-body .brand-heading {
