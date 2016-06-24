@@ -384,3 +384,7 @@ body {
 .video-thumb {
     padding-bottom: 15px;
 }
+
+.gallery-section article {
+    margin: 15px 0;
+}
