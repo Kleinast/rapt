@@ -49,25 +49,9 @@ $(function() {
         return false;
     });
 
-    $('.gallery-section div.row').gridderExpander({
-        scroll: true,
-        scrollOffset: 30,
-        scrollTo: "panel",                  // panel or listitem
-        animationSpeed: 400,
-        animationEasing: "easeInOutExpo",
-        showNav: true,                      // Show Navigation
-        nextText: "Next",                   // Next button text
-        prevText: "Previous",               // Previous button text
-        closeText: "Close",                 // Close button text
-        onStart: function(){
-            //Gridder Inititialized
-        },
-        onContent: function(){
-            //Gridder Content Loaded
-        },
-        onClosed: function(){
-            //Gridder Closed
-        }
+    $('.gallery-section .row').masonry({
+      // set itemSelector so .grid-sizer is not used in layout
+      itemSelector: 'article',
     });
 });
 
