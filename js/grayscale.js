@@ -49,11 +49,33 @@ $(function() {
         return false;
     });
 
-    $('.gallery-section .row').masonry({
-      // set itemSelector so .grid-sizer is not used in layout
-      itemSelector: 'article',
+    $('.gallery-section').imagesLoaded(function () {
+        $('.gallery-section .row').masonry({
+          itemSelector: 'article',
+        });
     });
+    
 });
+
+$.fn.masonryImagesReveal = function( $items ) {
+  var msnry = this.data('masonry');
+  var itemSelector = msnry.options.itemSelector;
+  // hide by default
+  $items.hide();
+  // append to container
+  this.append( $items );
+  $items.imagesLoaded().progress( function( imgLoad, image ) {
+    // get item
+    // image is imagesLoaded class, not <img>, <img> is image.img
+    var $item = $( image.img ).parents( itemSelector );
+    // un-hide item
+    $item.show();
+    // masonry does its thing
+    msnry.appended( $item );
+  });
+  
+  return this;
+};
 
 // Closes the Responsive Menu on Menu Item Click
 $('.navbar-collapse ul li a').click(function() {
