@@ -147,7 +147,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/RAPT_J1_2.jpg) no-repeat bottom center scroll;
+    background: url(../img/RAPT_J1_2.jpg) no-repeat center -150px scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -163,7 +163,7 @@ a:focus {
 
 .intro .intro-body .brand-heading {
     font-size: 40px;
-    margin-top: 450px;
+    margin-top: 480px;
 }
 
 .intro .intro-body .intro-text {
