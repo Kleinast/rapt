@@ -418,6 +418,7 @@ body {
 }
 .sacd {
     font-size: 65%;
+    color: #d93633;
 }
 
 @media(max-width:1199px) {
